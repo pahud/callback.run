@@ -18,7 +18,7 @@ docker run --name ${CONTAINER_NAME} -p 8080:8080 \
     -v `pwd`/log/nginx:/opt/openresty/nginx/logs \
     -v `pwd`/lua:/opt/openresty/nginx/conf/lua \
     -v `pwd`/lualib:/opt/openresty/nginx/conf/lualib \
-    -v `pwd`/nginx.conf.d/cb.conf:/opt/openresty/nginx/conf/sites-enable.d/cb.conf \
+    -v `pwd`/nginx.conf.d/cb.conf:/opt/openresty/nginx/conf/sites-enabled.d/cb.conf \
     --env-file=env-file \
     ${extra_addhost} \
     ${link_params} \
